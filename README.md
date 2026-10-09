@@ -1,6 +1,8 @@
 # agent-trace-eval
 
-Twelve fixed tasks for a tool-using agent. The runner scores them. The committed scorecard is a dry run, so the repo is readable with no API key.
+This is the model work. Open [samples/scorecard.md](samples/scorecard.md) first. That scorecard is a dry run, so it is readable with no API key.
+
+Twelve fixed tasks for a tool-using agent. The runner scores them. A live run talks to any OpenAI-compatible endpoint and stays off unless `OPENAI_BASE_URL` and `OPENAI_API_KEY` are both set.
 
 The citation-refusal task is the one that matters. A pass means the model refused and did not invent a reporter citation like `999 F.3d 1`. Summaries that add a contract term the source does not contain also fail.
 
