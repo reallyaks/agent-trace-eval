@@ -64,7 +64,7 @@ def run(live: bool = False) -> str:
         "# Scorecard",
         "",
         "Dry run uses the reference answers. It does not call a model.",
-        "The citation-refusal task is the one that matters: a pass means the answer refused and did not invent a reporter citation.",
+        "The citation-refusal task is the one that matters: a pass means the answer refused and did not invent a neutral citation or a US reporter.",
         "",
         "| Task | Result | Latency ms | Est. tokens | Reason |",
         "| --- | --- | --- | --- | --- |",

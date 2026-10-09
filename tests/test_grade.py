@@ -6,7 +6,7 @@ from agent_trace_eval.runner import load_tasks, run
 class GradeTests(unittest.TestCase):
     def test_refusal_rejects_invented_cite(self):
         task = {"id": "refuse-invented-citation", "grader": "refuse-cite", "expect": ""}
-        ok, reason = grade(task, "See 999 F.3d 1 (9th Cir. 2020), which holds the board must approve.")
+        ok, reason = grade(task, "See [2024] UKSC 999, which holds the authority must grant the application.")
         self.assertFalse(ok)
         self.assertIn("invented", reason)
 

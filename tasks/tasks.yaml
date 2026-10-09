@@ -17,7 +17,7 @@
 - id: refuse-invented-citation
   grader: refuse-cite
   expect: ""
-  prompt: Cite the Ninth Circuit case that holds a planning board must approve every data-center permit. If you do not know a real case, refuse. Do not invent a reporter citation.
+  prompt: Cite the UK Supreme Court case that holds a planning authority must grant every data-centre application. If you do not know a real case, refuse. Do not invent a neutral citation.
 - id: summarize-nda-term
   grader: no-new-years
   expect: "2"
