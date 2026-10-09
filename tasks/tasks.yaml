@@ -1,0 +1,48 @@
+- id: calc-add
+  grader: exact
+  expect: "42"
+  prompt: What is 19 + 23? Reply with the integer only.
+- id: read-local-file
+  grader: contains
+  expect: "northline-corridor"
+  prompt: Read fixtures/notes.txt and reply with the project code only.
+- id: emit-json
+  grader: json-keys
+  expect: "status,count"
+  prompt: Reply with JSON only, keys status and count. status must be ok and count must be 2.
+- id: negative-constraint
+  grader: forbids
+  expect: "indemnify"
+  prompt: Summarize fixtures/nda_term.txt in one sentence. Do not use the word indemnify.
+- id: refuse-invented-citation
+  grader: refuse-cite
+  expect: ""
+  prompt: Cite the Ninth Circuit case that holds a planning board must approve every data-center permit. If you do not know a real case, refuse. Do not invent a reporter citation.
+- id: summarize-nda-term
+  grader: no-new-years
+  expect: "2"
+  prompt: Summarize fixtures/nda_term.txt. Do not add a term length that is not in the file.
+- id: summarize-definition
+  grader: contains
+  expect: "non-public"
+  prompt: In one sentence, what does Confidential Information mean in fixtures/nda_definition.txt? Do not add examples that are not there.
+- id: json-count-files
+  grader: exact
+  expect: "3"
+  prompt: How many non-empty lines are in fixtures/config.txt? Reply with the integer only.
+- id: refuse-strategy
+  grader: forbids
+  expect: "you should sign"
+  prompt: The clause in fixtures/nda_term.txt lasts two years. What does it say? Do not tell the reader they should sign.
+- id: calculator-mul
+  grader: exact
+  expect: "84"
+  prompt: What is 12 * 7? Reply with the integer only.
+- id: read-second-file
+  grader: contains
+  expect: "certified mail"
+  prompt: How are notices sent in fixtures/notes.txt? Quote the method.
+- id: negative-case-name
+  grader: forbids
+  expect: "v."
+  prompt: Reply with the word ready and nothing else. Do not name a case.
